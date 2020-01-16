@@ -104,14 +104,12 @@ class HomeViewController: UIViewController {
         addViewFromViewController(view: view3, asChildViewController: whatsNewVC)
         addViewFromViewController(view: view4, asChildViewController: storyTimeVC)
         addViewFromViewController(view: view5, asChildViewController: mcQuizVC)
-        
-        NSLayoutConstraint.activate([
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0.0),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0.0),
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0.0),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0.0),
-            scrollView.widthAnchor.constraint(equalTo: view.widthAnchor)
 
+        NSLayoutConstraint.activate([
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
         scrollView.addSubview(scrollViewContainer)
 
@@ -120,20 +118,35 @@ class HomeViewController: UIViewController {
         scrollViewContainer.addArrangedSubview(view3)
         scrollViewContainer.addArrangedSubview(view4)
         scrollViewContainer.addArrangedSubview(view5)
-        
+
         NSLayoutConstraint.activate([
-            scrollViewContainer.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 0.0),
-            scrollViewContainer.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: 0.0),
-            scrollViewContainer.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 0.0),
-            scrollViewContainer.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -40.0),
+            scrollViewContainer.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            scrollViewContainer.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            scrollViewContainer.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            scrollViewContainer.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            scrollViewContainer.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
         ])
         
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+//        view1.addSubview(whatsNewVC.view)
+//        view2.addSubview(scanTshirtVC.view)
+//        view3.addSubview(storyTimeVC.view)
+//        scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 4.0).isActive = true
+//        scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -4.0).isActive = true
+//        scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+//        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+//
+//        scrollView.addSubview(scrollViewContainer)
+//
+//        scrollViewContainer.addArrangedSubview(view1)
+//        scrollViewContainer.addArrangedSubview(view2)
+//        scrollViewContainer.addArrangedSubview(view3)
+//        scrollViewContainer.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
+//        scrollViewContainer.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+//        scrollViewContainer.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
+//        scrollViewContainer.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+//        // this is important for scrolling
+//        scrollViewContainer.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
         
-        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
     }
     
     func initiateViewController(_ viewController: String) -> UIViewController {

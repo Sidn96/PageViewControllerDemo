@@ -18,6 +18,7 @@
 		C0CE106123C590D000164482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CE105F23C590D000164482 /* LaunchScreen.storyboard */; };
 		C0CE106923C5991B00164482 /* CustomCapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE106823C5991B00164482 /* CustomCapsuleView.swift */; };
 		C0CE106B23C5A00000164482 /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE106A23C5A00000164482 /* CustomPageViewController.swift */; };
+		C0D2FF7923D02DAC00D3CFED /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D2FF7823D02DAC00D3CFED /* WebViewController.swift */; };
 		C0E5185F23C87B8F003A6248 /* CustomShapeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5185E23C87B8F003A6248 /* CustomShapeVC.swift */; };
 		C0E5186123C87C03003A6248 /* McQuizBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5186023C87C03003A6248 /* McQuizBackgroundView.swift */; };
 		C0E5186723C89FE4003A6248 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E5186623C89FE4003A6248 /* CollectionCell.swift */; };
@@ -38,6 +39,7 @@
 		C0CE106223C590D000164482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0CE106823C5991B00164482 /* CustomCapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCapsuleView.swift; sourceTree = "<group>"; };
 		C0CE106A23C5A00000164482 /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		C0D2FF7823D02DAC00D3CFED /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		C0E5185E23C87B8F003A6248 /* CustomShapeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapeVC.swift; sourceTree = "<group>"; };
 		C0E5186023C87C03003A6248 /* McQuizBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = McQuizBackgroundView.swift; sourceTree = "<group>"; };
 		C0E5186623C89FE4003A6248 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				C0E5186023C87C03003A6248 /* McQuizBackgroundView.swift */,
 				C0E5186623C89FE4003A6248 /* CollectionCell.swift */,
 				C0E5186823C8A080003A6248 /* MyCollectionViewController.swift */,
+				C0D2FF7823D02DAC00D3CFED /* WebViewController.swift */,
 			);
 			path = PageControllerDemo;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				C0E5186923C8A080003A6248 /* MyCollectionViewController.swift in Sources */,
 				C0E5185F23C87B8F003A6248 /* CustomShapeVC.swift in Sources */,
 				C0E5186723C89FE4003A6248 /* CollectionCell.swift in Sources */,
+				C0D2FF7923D02DAC00D3CFED /* WebViewController.swift in Sources */,
 				C0E5186123C87C03003A6248 /* McQuizBackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
